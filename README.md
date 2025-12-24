@@ -1,6 +1,6 @@
 # AI Full Stack Developer Journey
 Welcome to my **AI Full Stack Developer Journey**
-This repository documents my **day-by-day learning path**to become an **AI Full Stack Developer**.
+This repository documents my **day-by-day learning path** to become an **AI Full Stack Developer**.
 
 I am learning from **basics to advanced**, covering: Frontend -> Backend -> Databases -> AI/ML -> Deployment.
 
@@ -57,7 +57,7 @@ Suggestions, issues, and improvements are **always welcome**
 
 ---
 ## Support
-If this repository helps you in your learning journey,**please give it a Star**
+If this repository helps you in your learning journey,**please give it a Star** it motivates me a lot!
 
 ---
 ## Connect With Me
