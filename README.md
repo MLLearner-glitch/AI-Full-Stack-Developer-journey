@@ -25,7 +25,7 @@ I am learning from **basics to advanced**, covering: Frontend -> Backend -> Data
 ### AI/ML
 - Python
 - Machine Learning algorithms
-- LLM, longchain,genai
+- LLM, langchain,GENAI
 ### Tools & Platforms
 - Git & Github
 - VS code
