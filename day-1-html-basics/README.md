@@ -9,6 +9,7 @@ This project contains my Day 1 practice of HTML basics as part of my AI Full Sta
  - DOCTYPE, html, head, body
  - Headings and paragraphs
  - Buttons 
+ - HTML Stands for Hypertext Markup Language
 
 ## Project Structure
 
