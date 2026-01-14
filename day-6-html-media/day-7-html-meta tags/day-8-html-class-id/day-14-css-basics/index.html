@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Channakesavulu T">
+    <meta name="keywords" content="float properties,left, right, none, inherit">
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="basics.css">
+    <title>CSS Basics</title>
+</head>
+<body>
+    <header>
+        <h1>Day 10 - CSS Basics properties</h1>
+    </header>
+    <main>
+        <section class="section1">
+            <h2>Float property</h2>
+            <p>The <b>float</b> property is used for positioning and formatting content</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>left</li>
+                    <li>right</li>
+                    <li>none</li>
+                    <li>inherit</li>
+                </ul>
+            </p>
+        </section>
+        <section class="section2">
+            <h2>float:left Example</h2>
+            <p>The <b>float:left</b> value indicates that an element should float to the left within its container.</p>
+            <div class="left">
+                <img src="images/img_tree.png" alt="tree with owl" width="300" height="300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+                Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui 
+                eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div>
+        </section>
+        <section class="section3">
+            <h2>float:right Example</h2>
+            <p>The <b>float:right</b> value indicates that an element should float to the right within its container.</p>
+            <div class="floatright">
+                <img src="images/img_tree.png" alt="Tree with owl" width="300" height="300" class="right">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+                Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui 
+                eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div>
+
+            </div>
+        </section>
+        <section class="section4">
+            <h2>float:none Example</h2>
+            <p>The <b>float:none</b> value is the default value for float,and the element is displayed just where it occurs in its container.</p>
+            <div class="floatnone">
+                <img src="images/img_tree.png" alt="Tree with owl" width="300" height="300" class="none">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+                Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui 
+                eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</div>
+
+            </div>
+        </section>
+        <section class="clear">
+            <h2>CSS Clear and Clearfix Hack</h2>
+            <p>The <b>clear</b> property specifies what should happen with the element that is NEXT to a floating element.</p>
+            <h3>Without clear</h3>
+            <div class="div7">div1</div>
+            <div class="div4">div2 - Notice that div2 is after div1 in the HTML code.However,since div2 has no clear,
+                the text in div2 floats around div1.
+            </div>
+            <h3>With Clear</h3>
+            <div class="div5">div3</div>
+            <div class="div6">div4 - here clear:left; pushes div4 down below the floating div3, on its left side.</div>
+        </section>
+        <section class="section5">
+            <h2>Clearfix Hack</h2>
+            <p>if a floated element is taller than the containing element.it will overflow outside of its container.we can then add a clearfix hack to solve this problem.</p>
+            <p>The clearfix element involves the <b>::after</b> pseudo element,and is used to ensure that the parent container properly encloses its floated child elements.</p>
+            <h2>Without clearfix</h2>
+            <div>
+                <img src="images/img_tree.png" alt="Tree with owl" width="100" height="100" class="classimage">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+            </div>
+        </section>
+        <section class="section">
+            <h2>Using the Clearfix Hack</h2>
+            <div class="clearfix">
+                <img src="images/img_tree.png" alt="Tree with owl" width="200" height="200" class="image">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+            </div>
+        </section>
+        <section class="section6">
+            <h2>CSS Float NEXT To Each Other</h2>
+            <p>HTML div elements are block elements,and will start on a newline and takeup the full width available.However,if we use <b>float:left</b> we can make the div elements to float Next to each other.</p>
+            <div class="div">
+                <div class="div1">Div1</div>
+                <div class="div2">Div2</div>
+                <div class="div3">Div3</div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Channakesavulu T | CSS Float property</p>
+    </footer>
+</body>
+</html>

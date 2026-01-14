@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Channakesavulu T">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+    <title>CSS Flexbox</title>
+</head>
+<body>
+    <header>
+        <h1>Day 15 - CSS Flexbox</h1>
+        <p>CSS Flexbox is a layout model for arranging items(horizontally or vertically) within a container,in a flexbox and responsive way.</p>
+        <p>Flexbox makes it easy to design a flexible and responsive layout,without using float or positioning.</p>
+    </header>
+    <main>
+        <section>
+            <h2>CSS Components</h2>
+            <p><b>A Flex Container</b> - The parent(container) element, where the <b>diplay</b> property is set to <b>flex or inline-flex</b></p>
+            <p><b>one or more flex items</b> - The direct children of the flex container automatically becomes flex items.</p>
+            <div class="container">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+        </section>
+        <section>
+            <h2>flex-direction Property</h2>
+            <p>The <b>flex-direction</b> property specifies the display:direction of flex items in a flex container.</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>row(default)</li>
+                    <li>column</li>
+                    <li>row-reverse</li>
+                    <li>column-reverse</li>
+                </ul>
+            </p>
+            <div class="container1">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+        </section>
+        <section>
+            <h2>flex-wrap Property</h2>
+            <p>The <b>flex-wrap</b> property specifies whether the flex items should wrap or not. if there is not enough room for them on one flex line.</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>nowrap</li>
+                    <li>wrap</li>
+                    <li>wrap-reverse</li>
+                </ul>
+            </p>
+            <div class="container2">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+            <h2>flex-flow Property</h2>
+            <p>The <b>flex-flow</b> is a shorthand for setting both <b>flex-direction</b> and <b>flex-wrap</b> properties.</p>
+        </section>
+        <section>
+            <h2>justify-content Property</h2>
+            <p>The <b>justify-content</b> property align the flex items.when they do not use all available spaces on the main axis (horizontally).</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>space-evenly</li>
+                </ul>
+            </p>
+            <p>The center value aligns the flex items in the center of the container.</p>
+            <div class="container3">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+        </section>
+        <section>
+            <h2>align-items Property</h2>
+            <p>The <b>align-items</b> property is used to align the flex items.when they do not use all available spaces on the cross-axis(vertically)</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>center</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>stretch</li>
+                    <li>baseline</li>
+                </ul>
+            </p>
+            <p>The <b>stretch</b> value stretchs the flex items to fill the container(this is equal to "normal" which is default).</p>
+            <div class="container4">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+            </div>
+        </section>
+        <section>
+            <h2>align-content Property</h2>
+            <p>The <b>align-content</b> property is similar to <b>align-items</b>,but instead of aligning the flex items,it aligns the flex lines.</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>center</li>
+                    <li>stretch</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                    <li>space-evenly</li>
+                </ul>
+            </p>
+            <h3>align-content:center</h3>
+            <p>With center,the flex lines are packed towards the center of the container.</p>
+            <div class="content">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+                <div>item 4</div>
+                <div>item 5</div>
+                <div>item 6</div>
+                <div>item 7</div>
+                <div>item 8</div>
+                <div>item 9</div>
+            </div>
+            <h3>align-content:stretch</h3>
+            <p>With <b>stretch</b>,the flex lines stretch to take up the remaining space of the container(this is default).</p>
+            <div class="content1">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+                <div>item 4</div>
+                <div>item 5</div>
+                <div>item 6</div>
+                <div>item 7</div>
+                <div>item 8</div>
+                <div>item 9</div>
+            </div>
+
+            <h3>align-content:flex-start</h3>
+            <p>With <b>flex-start</b>,the flex lines are packed toward the start of the container.</p>
+            <div class="content2">
+                <div>item 1</div>
+                <div>item 2</div>
+                <div>item 3</div>
+                <div>item 4</div>
+                <div>item 5</div>
+                <div>item 6</div>
+                <div>item 7</div>
+                <div>item 8</div>
+                <div>item 9</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Channakesavulu T | CSS FlexBox</p>
+    </footer>
+</body>
+</html>

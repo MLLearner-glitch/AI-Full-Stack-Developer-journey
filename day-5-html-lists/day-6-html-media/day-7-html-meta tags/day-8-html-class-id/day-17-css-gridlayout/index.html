@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>CSS Grid Layout</title>
+</head>
+<body>
+    <header>
+        <h1>Day 17 - CSS Grid layout</h1>
+    </header>
+    <main>
+        <p>The grid layout module offers a grid-based layout system,with rows and columns.</p>
+        <p>The Grid layout module allows developers to easily create complex web layouts.</p>
+        <section>
+            <h2>CSS Grid components</h2>
+            <p>A grid always consists of:
+                <p><b>A Grid Container</b> - The parent(container) element,where the <b>display</b> property set to the <b>grid</b> or <b>inline-grid</b> properties.</p>
+                <p><b>One or More grid items</b> - The direct children of the grid container automatically becomes an <b>grid items</b></p>
+            </p>
+            <p>Example for grid container with grid items.</p>
+            <div class="container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+            </div>
+        </section>
+        <section>
+            <h2>CSS Grid Tracks</h2>
+            <p>Inside the grid container you can define the number and size of the grid columns and rows</p>
+            <p>for this,we will use the following properties
+                <p><b>gird-template-columns</b> - Defines the number and width of the columns in the grid.</p>
+                <p><b>grid-template-rows</b> - Defines the number and height of the rows in the grid.</p>
+                <p><b>grid-template-areas</b> - Defines how to display columns and rows,using named grid items.</p>
+            </p>
+            <p>Common values are:
+                <ul>
+                    <li>fixed lengths(100px 300px 200px)</li>
+                    <li>percentages</li>
+                    <li>fr unit(1fr 2fr 1fr)</li>
+                    <li>auto(auto auto auto)</li>
+                    <li>repeat() (repeat(3,1fr))</li>
+                    <li>minmax(80px,1fr)150px 150px</li>
+                </ul>
+            </p>
+            <p>Example of grid-template-columns:auto</p>
+            <div class="container1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+
+            <h3>grid-template-rows</h3>
+            <div class="container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+        </section>
+        <section>
+            <h2>CSS Grid gap</h2>
+            <p>The space between the columns and rows in a grid container are called <b>gap</b> or <b>gutters.not on the outer edges of the grid container.</b></p>
+            <p>default size is 0</p>
+            <p>The size of the gap can be adjusted with the following properties:
+                <p><b>column-gap</b> - Specifies the gap between the grid columns.</p>
+                <p><b>row-gap</b> - Specifies the gap between the grid rows.</p>
+                <p><b>gap</b> - it is a shorthand for both <b>column-gap</b> and <b>row-gap</b>.</p>
+            </p>
+            <p>Example for column-gap</p>
+            <div class="container3">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+
+            <h3>row-gap</h3>
+            <div class="container4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+            </div>
+
+            <h3>gap</h3>
+            <div class="container5">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </section>
+        <section>
+            <h2>CSS Grid Items</h2>
+            <p>A grid container contains one or more grid items.</p>
+            <h2>sizing/spanning grid items</h2>
+            <p>A grid item can span over multple columns or rows.</p>
+            <p>we can specify where to start and end grid item by using the following properties:
+                <p><b>grid-column-start</b> - Specifies on which column-line the grid item will start.</p>
+                <p><b>grid-column-end</b> - Specifies on which column-line the grid item will end.</p>
+                <p><b>grid-row-start</b> - Specifies on which row-line the grid item will start.</p>
+                <P><b>grid-row-end</b> - Specifies on which row-line the grid item will end.</P>
+                <p><b>grid-row</b> - Shorthand property for <b>grid-row-start</b> and <b>grid-row-end</b></p>
+                <p><b>grid-column</b> - Shorthand property for <b>grid-column-start</b> <b>grid-column-end</b></p>
+            </p>
+            <p>Example of grid-column</p>
+            <div class="container6">
+                <div class="item1">1</div>
+                <div class="item2">2</div>
+                <div class="item3">3</div>
+                <div class="item4">4</div>
+                <div class="item5">5</div>
+            </div>
+
+            <h3>grid-row</h3>
+            <div class="container7">
+                <div class="num1">1</div>
+                <div class="item2">2</div>
+                <div class="item3">3</div>
+                <div class="item4">4</div>
+                <div class="item5">5</div>
+            </div>
+        </section>
+        <h2>Grid item named</h2>
+        <p>The CSS <b>grid-template-areas</b> is a grid container property,and it specifies areas within a grid layout.</p>
+        <p>you can name grid items by using the CSS <b>grid-area</b> property,and then reference to the name in the <b>grid-template-areas</b> property.</p>
+        <p>Each area is defined within a apostrophes.The named grid items in each area is defined inside the apostrophes,separated by a space</p>
+        <div class="container8">
+            <div class="numb1">1</div>
+            <div class="numb2">2</div>
+            <div class="numb3">3</div>
+            <div class="numb4">4</div>
+            <div class="numb5">5</div>
+            <div class="numb6">6</div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Channakesavulu T | CSS Grid Layout</p>
+    </footer>
+    
+</body>
+</html>
