@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    border:2px solid black;
+    border-radius:8px;
+    padding:10px;
+}
+:root{
+    --primary-bg-color:#8fbc8f;
+    --primary-color:#fffaf0;
+}
+body{
+    background-color: var(--primary-bg-color);
+}
+.container{
+    color:var(--primary-bg-color);
+    background-color: var(--primary-color);
+    padding:10px;
+}
+.container .h2{
+    border-bottom: 2px solid var(--primary-bg-color);
+
+}
+.container .note{
+    border:1px solid var(--primary-bg-color);
+    padding:10px;
+}
+.div{
+    background-color: red;
+    width: 100px;
+    height:100px;
+    transition: width 2s;
+}
+.div:hover{
+    width: 300px;
+    background-color: blueviolet;
+}
+#div1{
+    transition-timing-function:linear;
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2s;
+}
+#div1:hover{
+    width:300px;
+    background-color: blueviolet;
+}
+#div2{
+    transition-timing-function: ease;
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2s;
+}
+#div2:hover{
+    width:300px;
+    background-color: blueviolet;
+}
+#div3{
+    transition-timing-function: ease-in;
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2s;
+}
+#div3:hover{
+    width:300px;
+    background-color: blueviolet;
+}
+#div4{
+    transition-timing-function: ease-out;
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2s;
+}
+#div4:hover{
+    width:300px;
+    background-color: blueviolet;
+}
+#div5{
+    transition-timing-function: ease-in-out;
+    width:100px;
+    height:100px;
+    background-color: red;
+    transition:width 2s;
+    transition: delay 1s;
+}
+#div5:hover{
+    width:300px;
+    background-color: blueviolet;
+}

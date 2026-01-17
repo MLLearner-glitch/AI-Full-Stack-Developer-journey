@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+    <title>CSS Advanced</title>
+</head>
+<body>
+    <header>
+        <h1>Day 20 - CSS Advanced</h1>
+    </header>
+    <main>
+        <section>
+            <h2>CSS Variables</h2>
+            <p>The var() function is used to insert value of a CSS Variable.</p>
+            <p>CSS variables have access to the DOM,which means that you can create variables with local or global scope,change the variables with javascript,and change
+                the variables based on media queries.
+            </p>
+            <h3>CSS Declare a Variable</h3>
+            <p>CSS variables can have a global or local space.
+                Global variables can be accessed through the entire document,while local variables can be used only inside the selector where it is declared.
+            </p>
+            <p>To create a global variable,declare it inside the <b>:root</b> selector.The <b>:root</b> selector matches the documents root element.</p>
+            <p>To create a local variable,declare it inside the selector that is going to use it.</p>
+            <p>A CSS variable name must begin with the two dashes(--) and is case sensitive.</p>
+            <div class="container">
+                <h2 class="h2">Variable</h2>
+                <p>To create a global variable,declare it inside the <b>:root</b> selector.The <b>:root</b> selector matches the documents root element.</p>
+                <p>To create a local variable,declare it inside the selector that is going to use it.</p>
+                <p class="note">A CSS variable name must begin with the two dashes(--) and is case sensitive.</p>
+            </div>
+        </section>
+        <section>
+            <h2>CSS Transition</h2>
+            <p>CSS Transitions allows you to change property values smoothly,over a given duration.</p>
+            <p>To create a transition effect,you must specify the CSS property you want to add a transition to, and the duration of the transition.</p>
+            <p>The CSS <b>transition</b> property is a shorthand property for:
+                <ul>
+                    <li>transition-property</li>
+                    <li>transition-duration</li>
+                    <li>transition-timing-function</li>
+                    <li>transition-delay</li>
+                </ul>
+            </p>
+            <h3>Example of transition</h3>
+            <div class="div"></div>
+        </section>
+        <section>
+            <h2>Transition Speed Curve</h2>
+            <p>The <b>transition-timing-function</b> property specifies the speed curve of the transition effect.</p>
+            <p>This property can have one of the following values:
+                <ul>
+                    <li>ease</li>
+                    <li>linear</li> 
+                    <li>ease-in</li>
+                    <li>ease-out</li>
+                    <li>ease-in-out</li> 
+                </ul>
+            </p>
+            <div id="div1">linear</div><br>
+            <div id="div2">ease</div><br>
+            <div id="div3">ease-in</div><br>
+            <div id="div4">ease-out</div><br>
+            <div id="div5">ease-in-out</div><br>
+
+            <h2>Transition delay</h2>
+            <p>The <b>transition-delay</b> property specifies a delay before the transition starts.</p>
+            <P>The transition-delay value is defined in seconds or milliseconds.</P>
+        </section>
+    </main>
+    
+</body>
+</html>

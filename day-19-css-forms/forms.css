@@ -126,9 +126,6 @@ header {
 /* ---------------------------
    INHERITANCE
 ---------------------------- */
-.sidebar p {
-  /* color inherited from body */
-}
 
 /* ---------------------------
    SPECIFICITY
