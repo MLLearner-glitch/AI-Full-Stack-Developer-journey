@@ -1,0 +1,88 @@
+*{
+    box-sizing:border-box;
+}
+header{
+    background-color: var(--primary-bg-color);
+    border:2px solid black;
+    border-radius:8px;
+    padding:5px;
+
+}
+h1{
+    text-align:center;
+}
+@keyframes heading{
+    from{background-color: black;}
+    to{background-color: white;}
+}
+:root{
+    --primary-bg-color:#fff2f4;
+    --primary-color:#fff3f5;
+}
+body{
+    background-color: var(--primary-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1rem;
+    border:2px solid black;
+    padding:10px;
+    border-radius:5px;
+}
+main{
+    border:2px solid black;
+    border-radius:8px;
+    padding:10px;
+    background-color:var(--primary-color);
+}
+
+h2{
+    font-size:30px;
+    display: flex;
+}
+.h2{
+    font-size:30px;
+    line-height:1.3em;
+}
+h3{
+    font-size:20px;
+}
+.animation{
+    width: 100px;
+    height: 100px;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+    background-color: red;
+}
+@keyframes myAnimation{
+    from{background-color: red;}
+    to{background-color: blue;}
+}
+.animation1{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    background-color: red;
+    animation:myanimation 4s linear 2s 3 alternate;
+}
+@keyframes myanimation{
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: blue; left:200px; top:0px;}
+    50% {background-color: yellow; left:200px; top:200px;}
+    75% {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}
+}
+@media screen and (min-width:458px) {
+    body {
+    background-color:lightgreen;
+    }
+    h2{
+        flex:100%;
+    }
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding:10px;
+    border:2px solid black;
+    border-radius:8px;
+}
