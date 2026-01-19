@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <title>CSS 2D Transforms</title>
+</head>
+<body>
+    <header>
+        <h1>Day 22 - CSS 2D Transforms</h1>
+    </header>
+    <main>
+        <section>
+            <p>The CSS <b>transform</b> property applies a 2D or 3D transformation to an element.
+            This property allows you to rotate,scale,move, and skew elements.</p>
+            <h2>CSS 2D Transforms Functions:</h2>
+            <ul>
+                <li>translate()</li>
+                <li>rotate()</li>
+                <li>scaleX()</li>
+                <li>scaleY()</li>
+                <li>scale</li>
+                <li>skewX()</li>
+                <li>skewY()</li>
+                <li>skew()</li>
+                <li>matrix()</li>
+            </ul>
+
+            <h2>translate() Function:</h2>
+            <p>The <b>translate()</b> function moves an element from its current position (according to the parameters given for the X-axis and Y-axis).</p>
+            <div class="transform"></div>
+        </section>
+        <section class="rotate">
+            <h2>rotate() Function:</h2>
+            <p>The <b>rotate()</b> function rotates an element clockwise or counter-clockwise according to a given degree.</p>
+
+            <div class="transform1"></div>
+
+            <h2>scale() Function:</h2>
+            <p>The <b>scale()</b> function increases or decreases the size of an element(according to the parameters).</p>
+
+            <div class="transform2"></div>
+
+            <h2>skew() Function:</h2>
+            <p>The <b>skew()</b> function skews an element along the X-axis and Y-axis by the given angles.</p>
+
+            <div class="transform3">This is normal div</div>
+
+            <div id="transform">
+                This is skew an element
+            </div>
+
+            <h2>matrix() Function:</h2>
+            <p>The <b>matrix()</b> function combines all the 2D transform functions into one.
+            it takes six parameters,containing mathematic functions,which allows you to rotate,scale,move,and skew elements.</p>
+            <p>The parameters are as follow:
+                matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()).
+            </p>
+
+            
+            <div id="mydiv">This is matrix div</div>
+        </section>
+        <section>
+            <h1 class="h1">CSS 3D Transforms</h1>
+            <p>The CSS <b>transform</b> property applies a 2D or 3D transformation to an element.
+            This property allows you to rotate,scale,move, and skew elements.</p>
+            <p>With the transform property you can use the following 3D transformation functions:</p>
+            <ul>
+                <li>rotateX()</li>
+                <li>rotateY()</li>
+                <li>rotateZ()</li>
+            </ul>
+
+            <h2>rotateX() Function:</h2>
+            <p>The <b>rotateX()</b> function rotates an element around its X-axis at a given degree.</p>
+
+            <div class="rotate1">normal div</div>
+            <div id="div1">150deg div</div>
+
+            <h2>rotateY() Function:</h2>
+            <p>The <b>rotateY()</b> function rotates an element around its Y-axis at a given degree.</p>
+
+            <div class="rotate2">normal div</div>
+            <div id="div2">150deg div</div>
+
+            <h2>rotateZ() Function:</h2>
+            <p>The <b>rotateZ()</b> function rotates an element around the Z-axis at a given degree.</p>
+
+            <div class="rotate3">normal div</div>
+            <div id="div3">90deg div</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 CSS 2D Transforms | 3D Transforms</p>
+    </footer>
+    
+</body>
+</html>
