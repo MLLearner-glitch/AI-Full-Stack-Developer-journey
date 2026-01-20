@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced.css">
+    <linK rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <title>CSS Multiple Backgrounds</title>
+</head>
+<body>
+    <header>
+        <h1>Day 23 - CSS Multiple Backgrounds</h1>
+    </header>
+    <main>
+        <p>CSS allows you to add multiple Background images for an element,through the <b>Background-image</b> property.</p>
+        <p>The different background images are separated by commas,and the images are stacked at top of each other,where the first image is closest to the viewer.</p>
+        <p>The Multiple background images can be specified using either the individual background properties with the <b>background</b> shorthand property.</p>
+        <section>
+            <h2>Multiple Background</h2>
+            <div class="div">
+                <h2>Lorem Ipsum Dolor</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It became known in the 1960s Letraset As a result of the release of desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+        <section>
+            <h2>background-origin:</h2>
+            <p>The CSS <b>background-origin</b> property specifies where the background is positioned.</p>
+            <p>This property can have one of the following values:</p>
+            <ul>
+                <li><b>border-box</b> - The background image starts from the top-left corner of the border edge.</li>
+                <li><b>padding-box</b> - The background image starts from the top-left corner of the padding edge.This is default.</li>
+                <li><b>content-box</b> - The background image starts from the top-left corner of the content edge.</li>
+            </ul>
+            <p><b>Note:</b> This property has no effect if the background-attachment property is set to fixed.</p>
+
+            <h3>Example:</h3>
+            <p>background-origin:padding-box</p>
+            <div class="div1">
+                <h3>padding-box:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            </div>
+            <p>background-origin:border-box</p>
+            <div class="div2">
+                <h3>border-box:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <p>backgroung-origin:content-box</p>
+            <div class="div3">
+                <h3>content-box:</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            </div>
+        </section>
+        <section>
+            <h2>background-clip property:</h2>
+            <p>The CSS <b>background-clip</b> property defines how far the background(color,image,or gradient) should extend within an element.</p>
+            <p>background-clip:padding-box</p>
+            <div class="div4">
+                <h3>Lorem Ipsum Donor</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            </div>
+            <p>background-clip:border-box</p>
+            <div class="div5">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <p>background-clip:content-box</p>
+            <div class="div6">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 CSS Multiple Backgrounds</p>
+    </footer>
+</body>
+</html>
