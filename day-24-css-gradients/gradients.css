@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    border:2px solid black;
+    border-radius:5px;
+    background-color: aliceblue;
+    color:navyblue;
+    line-height:1.3em;
+    padding:6px;
+}
+h1{
+    text-shadow: 1px 0 coral;
+    font-size:30px;
+}
+header{
+    border:2px solid black;
+    border-radius:6px;
+    padding:10px;
+    text-align:center;
+    background-color: var(--primary-bg-color);
+    color:var(--primary-color);
+}
+main{
+    border:2px solid black;
+    border-radius:6px;
+    padding:5px;
+    background-color: aliceblue;
+}
+.div{
+    background-image: linear-gradient(to bottom,red,yellow,brown);
+    border:2px solid black;
+    padding:30px;
+    text-align:center;
+}
+.div1{
+    background-image:linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));
+    padding:20px;
+    border:2px dashed black;
+    border-radius:6px;
+}
+.div2{
+    background-image:repeating-linear-gradient(red,yellow 10%,brown 20%);
+    padding:30px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div3{
+    background-image:radial-gradient(circle,red,yellow,brown);
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+    height: 300px;
+    width:200px;
+}
+.div4{
+    background-image:radial-gradient(closest-side at 70% 60%,red,yellow,brown);
+    height:200px;
+    width:300px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div5{
+    background-image:radial-gradient(closest-corner at 70% 60%,red,yellow,brown);
+    height:200px;
+    width:300px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div6{
+    background-image: repeating-radial-gradient(red,yellow 10%,brown 16%);
+    height:200px;
+    width:300px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div7{
+    background-image: conic-gradient(red,yellow,brown);
+    height:150px;
+    width:150px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div8{
+    background-image: conic-gradient(red 45deg,yellow 90deg,brown 210deg);
+    height:150px;
+    width:150px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:6px;
+}
+.div9{
+    background-image: conic-gradient(red 0deg,red 90deg,yellow 90deg, yellow 180deg,brown 180deg,brown 270deg,blue 270deg);
+    height:150px;
+    width:150px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:50%;
+}
+.div10{
+    background-image: repeating-conic-gradient(red 10%,yellow 20%,brown 20%);
+    height:150px;
+    width:150px;
+    padding:20px;
+    border:2px solid black;
+    border-radius:50%;
+}
+footer{
+    text-align:center;
+    border:2px solid black;
+    border-radius:6px;
+    padding:10px;
+    font-size:20px;
+}
+@media screen and (max-width:628px){
+    body{
+        display:flex;
+        display:inline-block;
+    }
+}

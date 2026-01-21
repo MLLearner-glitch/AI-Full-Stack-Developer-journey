@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="gradients.css">
+    <title>CSS Gradients</title>
+</head>
+<body>
+    <header>
+        <h1>Day 24 - CSS Gradients</h1>
+    </header>
+    <main>
+        <p>The CSS gradient functions let you display smooth transitions between two or more colors within an element.</p>
+        <p>CSS defines three types of gradients:</p>
+        <ul>
+            <li><b>Linear Gradients</b> - The color transition goes down, up, left, right, or diagonally</li>
+            <li><b>Radial Gradients</b> - The color transition goes out from a central point</li>
+            <li><b>Conic Gradients</b> - The color transition is rotated around a center point.</li>
+        </ul>
+        <p>The CSS gradient functions are used within the <b>background-image</b> property.</p>
+        <section>
+            <h2>linear-gradient() Function</h2>
+            <p>The linear-gradient() function creates a linear gradient.</p>
+            <div class="div">top to bottom (default)</div>
+
+            <h2>Transparency:</h2>
+            <div class="div1">Transparency</div>
+
+            <h2>CSS repeating-linear-gradient() Function</h2>
+            <p>The CSS <b>repeating-linear-gradient()</b> function is used to repeat linear gradients.</p>
+            <div class="div2">repeating</div>
+        </section>
+        <section>
+            <h2>Radial Gradients</h2>
+            <p>The CSS <b>radial-gradient()</b> function creates a radial gradient.</p>
+            <p>A radial gradient defines the color transition that goes out from a central point.</p>
+            <p>By default,<b>shape</b> is ellipse,<b>size</b> is farthest-corner,and <b>position</b> is center.</p>
+            <h2>SET Shape:</h2>
+            <div class="div3">circle</div>
+
+            <h2>The SIZE parameter</h2>
+            <p>it can take one of the following values:</p>
+            <ul>
+                <li>closest-side</li>
+                <li>farthest-side</li>
+                <li>closest-corner</li>
+                <li>farthest-corner</li>
+            </ul>
+            <div class="div4">closest-corner</div>
+
+            <h2>closest-corner:</h2>
+            <div class="div5"></div>
+
+            <h2>repeating-radial-gradient() Function</h2>
+            <p>The CSS repeating-radial-gradient() function is used to repeat radial gradients.</p>
+            <div class="div6"></div>
+        </section>
+        <section>
+            <h2>CSS Conic Gradients</h2>
+            <p>The CSS <b>conic-gradient()</b> function creates a conic gradient.</p>
+            <p>A conic gradient with color transitions rotated around a center point.</p>
+            <p>By default,angle is  0deg and position is center.</p>
+            <p>if no degree is specified,the colors will be spread equally around the center point.</p>
+            <h2>Conic Gradient:Three Colors</h2>
+            <div class="div7"></div>
+            <h2>Three Color and Degrees</h2>
+            <div class="div8"></div>
+
+            <h2>Create Pie Charts</h2>
+            <p>Just add <b>border-radius</b> to make the conic gradient look like a pie:</p>
+            <div Class="div9"></div>
+
+            <h2>repeating-conic-gradient() Function</h2>
+            <p>The CSS repeating-conic-gradient() function is used to repeat conic gradients.</p>
+            <div class="div10"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 CSS Gradients</p>
+    </footer>
+    
+</body>
+</html>
