@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: arial,sans-serif;
+    background:#0f172a;
+    color:#e5e7eb;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 40px;
+    background:#020617;
+}
+.nav a {
+    color:#e5e7eb;
+    text-decoration:none;
+    margin-left:20px;
+}
+#hero{
+    text-align: center;
+    padding:80px 20px;
+    background:linear-gradient(to right, #0ea5e9, #6366f1);
+}
+#hero a{
+    text-decoration: none;
+    color:white;
+}
+#aboutme{
+    padding:50px;
+    background:#020617;
+    margin:30px;
+    border-radius:12px;
+}
+#skills{
+    padding:50px;
+    background:#020617;
+    margin:30px;
+    border-radius:12px;
+}
+#projects {
+  padding: 50px;
+  background:#020617;
+  margin:30px;
+  border-radius:12px;
+}
+
+.project-card {
+    background-color: #020617;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+.project-card a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coming {
+    color: #888;
+    font-style: italic;
+}
+#contactme{
+    padding:50px;
+    background:#020617;
+    margin:30px;
+    border-radius:12px;
+}
+#contactme a{
+    text-decoration: none;
+    display: flex;
+    margin:10px;
+    color:white;
+}
+a:hover{
+    background:sandybrown;
+    width:100px;
+    padding:5px;
+    border-radius:20px;
+    animation-name:myanimation;
+    animation-duration:2s;
+    animation-direction:reverse;
+}
+.footer {
+  background: #020617;
+  color: #c9d1d9;
+  text-align: center;
+  padding: 25px 10px;
+  margin-top: 60px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links .link {
+  color: #58a6ff;
+  margin: 0 12px;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-links .link:hover {
+  color: #1f6feb;
+  transform: scale(1.2);
+}
+.pass{
+    line-height:1.5em;
+    letter-spacing: 0.8px;
+    word-spacing:pre-wrap;
+}
+@keyframes myanimation{
+    from{background-color: sandybrown; left:0px;}
+    to{background-color:#6366f1; left:100px;}
+}
+@media (max-width:768px){
+    .nav {
+        flex-direction: column;
+        text-align:center;
+    }
+}
