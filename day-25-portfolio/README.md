@@ -3,16 +3,16 @@
 This is my personal portfolio website built using HTML and CSS.  
 It showcases my profile, skills, and projects.
 
-## 🛠 Technologies Used
+##  Technologies Used
 - HTML
 - CSS
 
-## 📂 Features
+## Features
 - Clean and responsive design  
 - Projects section  
 - Footer with social links  
 
 
-## 👨‍💻 Author
+##  Author
 Channakesavulu  
 GitHub: https://github.com/MLLearner-glitch
